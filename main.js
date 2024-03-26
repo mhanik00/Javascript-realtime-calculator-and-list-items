@@ -30,6 +30,7 @@ addList.addEventListener("click", function () {
     console.log(uList.value);
     const li = document.createElement("li");
     li.innerHTML = uList.value;
+    li.style.color = "green";
 
     ul.appendChild(li);
 })
@@ -45,7 +46,9 @@ const ol = document.getElementById("ol");
 addOList.addEventListener("click", function () {
     console.log(oList.value);
     const li = document.createElement("li");
+
     li.innerHTML = oList.value;
+    li.style.color = "red";
     ol.appendChild(li);
 })
 // *********************************
